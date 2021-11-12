@@ -130,6 +130,14 @@
     grid-column: 1 / 2;
   }
 
+  .blogpost-main-container {
+    padding: 20px;
+  }
+
+  .blogpost-content {
+    margin: 20px;
+  }
+
   .blogpost-contact-container {
     padding: 10px 40px;
   }
