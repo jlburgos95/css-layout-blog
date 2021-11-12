@@ -28,7 +28,7 @@ header {
   width: 100%;
   height: 140px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
 }
 
 header .header-icons-container {
@@ -82,8 +82,9 @@ nav .nav-logo-container img {
 
 .home-main {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 4fr 1fr;
-  height: 100%;
+  height: 80%;
   background-image: url("../assets/img/Cover.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -94,16 +95,15 @@ nav .nav-logo-container img {
   display: grid;
   grid-column: 2 / 3;
   justify-items: center;
-  height: 350px;
-  margin-top: 80px;
 }
 
 .home-main-text {
   font-size: 30px;
-  font-weight: 700px;
+  font-weight: 700;
   letter-spacing: 10px;
   color: white;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .home-main-button {
@@ -140,7 +140,7 @@ nav .nav-logo-container img {
 
 .blogs-news-container img {
   width: 85%;
-  min-width: 400px;
+  min-width: 200px;
   max-width: 600px;
   grid-area: 2 / 1 / 3 / 2;
 }
@@ -201,6 +201,8 @@ nav .nav-logo-container img {
 footer {
   width: 100%;
   height: 110px;
+  display: flex;
+  align-items: center;
   background-color: #22272d;
   border-top: 35px solid #47cfac;
 }
@@ -208,7 +210,6 @@ footer {
 footer p {
   color: white;
   text-align: center;
-  margin-top: 28px;
 }
 
 .blogpost-main-container {
@@ -250,7 +251,7 @@ footer p {
 .blogpost-contact-info {
   display: inline-block;
   width: 40%;
-  margin: 0 40px;
+  margin: 0 20px;
   text-align: initial;
 }
 
@@ -265,7 +266,49 @@ footer p {
 }
 
 .blogpost-contact-info div a {
-  margin-bottom: 10px;
   padding-bottom: 4px;
   border-bottom: 1px solid black;
+}
+
+.blogpost-contact-info div p {
+  margin-top: 10px;
+}
+
+.profile-main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #e6e9ed;
+  margin-bottom: 50px;
+}
+
+.profile-main-container img {
+  width: 40%;
+  margin-right: 30px;
+}
+
+.profile-main-container h2 {
+  margin-bottom: 10px;
+}
+
+.profile-main-proyects {
+  padding: 0 50px 40px;
+}
+
+.profile-main-proyects h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.proyects-main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.proyect-container h4 {
+  margin-bottom: 15px;
 }
